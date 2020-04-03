@@ -26,7 +26,25 @@
 
   
   <link href="assets/css/style.css" rel="stylesheet">
+  <style> 
 
+    html { 
+
+        -webkit-filter: grayscale(100%); 
+
+        -moz-filter: grayscale(100%); 
+
+        -ms-filter: grayscale(100%); 
+
+        -o-filter: grayscale(100%); 
+
+        filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
+
+        _filter:none; 
+
+    } 
+
+</style>
   
 </head>
 
@@ -83,8 +101,14 @@
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
-      
       <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">4.4日 全国默哀</h2>
+          <p class="animated fadeInUp">谨此纪念疫情中逝去的同胞</p>
+          <p class="animated fadeInUp">在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。 </p>
+        </div>
+      </div>
+      <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animated fadeInDown">欢迎来到 <span>Siriamidori</span><span> 的服务器</span></h2>
           <p class="animated fadeInUp">生存、创造Minecraft服务器</p>
@@ -117,13 +141,7 @@
         </div>
       </div>
 
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animated fadeInDown">欢迎援鄂医护人员回家</h2>
-          <p class="animated fadeInUp">你们辛苦了！武汉加油，中国加油！</p>
-          <img src="assets/img/thanks.png" width="240" height="400">
-        </div>
-      </div>
+     
 
       <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>

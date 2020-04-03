@@ -26,7 +26,25 @@
 
   
   <link href="assets/css/style.css" rel="stylesheet">
+  <style> 
 
+    html { 
+
+        -webkit-filter: grayscale(100%); 
+
+        -moz-filter: grayscale(100%); 
+
+        -ms-filter: grayscale(100%); 
+
+        -o-filter: grayscale(100%); 
+
+        filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
+
+        _filter:none; 
+
+    } 
+
+</style>
   
 </head>
 
@@ -180,6 +198,12 @@
           </div>
 
           <div class="col-lg-4 box featured">
+            <script>
+              function a(){
+                $('#lightbox').width($(window).width()).height($(window).height()).fadeIn(200);
+                $('#box').fadeIn(200);
+              }
+            </script>
             <h3>推荐款</h3>
             <h4>￥40<span>三个月</span></h4>
             <ul>
@@ -188,7 +212,7 @@
               <li><i class="bx bx-check"></i> 强大的管理面板</li>
               <li class="na"><i class="bx bx-x"></i> <span>长期技术支持</span></li>
             </ul>
-            <a href="#" class="get-started-btn">现在购买</a>
+            <a class="get-started-btn" onclick="a();">现在购买</a>
           </div>
 
           <div class="col-lg-4 box">
@@ -273,7 +297,14 @@
   <script src="assets/js/live2d-widget-master/autoload.js"></script>
   
   <script src="assets/js/main.js"></script>
-
+  <div id="lightbox"></div>
+	<div id="box">
+		<a href="" class="close"></a>
+		<form method="" action="">
+      <p>付款后自动发货</p>
+      <img src="assets/img/about.jpg" width="100" height="200">
+		</form>
+	</div>
 </body>
 
 </html>
